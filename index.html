@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Doctor's App</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="MainCtrl as main">
+	<div class="container">
+	<br/>
+	
+	<!-- <h3>
+		{{ main.message }}
+	</h3>
+
+
+	<h3>
+		{{ main.appointment }}
+	</h3>
+
+	<h4>Using ng-repeat</h4>
+
+	<table class="table">
+		<tr ng-repeat="appt in main.appointments">
+			<td>{{ appt.doc }}</td>
+			<td>{{ appt.patient }}</td>
+		</tr>
+	</table> -->
+
+	<input type="text" placeholder="First Name" ng-model="main.firstname">
+	<input type="text" placeholder="Last Name" ng-model="main.lastname">
+
+	<br/>
+
+	<h4>Preview Below</h4>
+	<tt>
+		First Name: {{ main.firstname }}<br/>
+		Last Name: {{ main.lastname }}<br/>
+	</tt>
+
+	</div>
+
+	
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

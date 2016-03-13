@@ -9,34 +9,49 @@
 	<div class="container">
 	<br/>
 	
-	<!-- <h3>
+	<h3>
 		{{ main.message }}
 	</h3>
 
+	<br>
 
 	<h3>
 		{{ main.appointment }}
 	</h3>
 
 	<h4>Using ng-repeat</h4>
-
 	<table class="table">
 		<tr ng-repeat="appt in main.appointments">
 			<td>{{ appt.doc }}</td>
 			<td>{{ appt.patient }}</td>
 		</tr>
-	</table> -->
+	</table>
 
+	<h4>Using ng-model</h4>
 	<input type="text" placeholder="First Name" ng-model="main.firstname">
 	<input type="text" placeholder="Last Name" ng-model="main.lastname">
 
 	<br/>
 
-	<h4>Preview Below</h4>
+	<h4>Preview Below:</h4>
 	<tt>
 		First Name: {{ main.firstname }}<br/>
 		Last Name: {{ main.lastname }}<br/>
 	</tt>
+
+	<br>
+
+	<h4>Using ng-click to increment and decrement a counter</h4>
+	<br>
+		<button class = "btn btn-success" ng-click = "count = count + 1" ng-init = "count = 0">Increment</button>
+		<button  class = "btn btn-warning" ng-click = "count = count - 1" ng-init = "count = 0">Decrement</button>
+		<span>
+			<tt>
+				The count is currently: {{ count }}
+			</tt>
+		</span>
+
+
 
 	</div>
 

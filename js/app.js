@@ -27,5 +27,16 @@ angular.module('myApp',[])//name of app. Array holds third party and custom depe
 		];
 
 		vm.firstname = "";
-		vm.lastname = "";
+		vm.lastname = "";		
+
+		vm.count = 0;
+
+		vm.increment = function(){
+			vm.count++;
+		}
+
+		vm.decrement = function(){
+			vm.count--;
+		}
+
 	});
